@@ -1,16 +1,14 @@
-import Logo from './logo'
-
 export default function Sidebar() {
   return <div>
     <div
       className="w-64 absolute sm:relative bg-gray-800 shadow md:h-full flex-col justify-between hidden sm:flex max-h-screen min-h-screen overflow-y-scroll hide-scrollbar">
       <div className="px-8">
         <div className="h-16 w-full flex items-center flex flex-nowrap pt-10">
-          <Logo scale={0.70} />
-          <div
-            className={'font-semibold text-white text-2xl w-full -ml-6'}>
-            Absolute0
-          </div>
+          <a
+            href={'/'}
+            className={'font-semibold text-white text-2xl w-full'}>
+            Dyson<span className={'text-cyan-300'}>Sh</span>
+          </a>
         </div>
         <ul className="mt-12">
           <li
