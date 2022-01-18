@@ -5,7 +5,7 @@ import Sidebar from '../components/sidebar'
 export default function MyApp({ Component, pageProps }) {
   return <div className={'flex flex-no-wrap text-white'}>
     <Sidebar />
-    <div className={'max-h-screen w-full overflow-y-scroll bg-gray-900'}>
+    <div className={'max-h-screen w-full overflow-y-scroll bg-gray-900 flex flex-col justify-start'}>
       <Component {...pageProps} />
     </div>
   </div>

@@ -2,26 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dbd0fa5-016d-43c0-af55-0e5cd6b36441" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/.prettierrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/nest-cli.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app.controller.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app.controller.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/test/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/test/jest-e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/tsconfig.build.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/docs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/docs/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/controllers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/controllers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/controllers/ping.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/controllers/ping.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/migrate.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/migrate.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/studio/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/studio/pages/new.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/pages/new.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +46,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -68,6 +59,18 @@
       <recent name="$PROJECT_DIR$/apps/studio/pages" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v16.13.2/bin/node" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -79,7 +82,13 @@
       <workItem from="1642431872780" duration="111000" />
       <workItem from="1642432041644" duration="3065000" />
       <workItem from="1642436125218" duration="6952000" />
-      <workItem from="1642443520864" duration="3844000" />
+      <workItem from="1642443520864" duration="4663000" />
+      <workItem from="1642488041894" duration="101000" />
+      <workItem from="1642516293595" duration="351000" />
+      <workItem from="1642516674295" duration="4239000" />
+      <workItem from="1642521055055" duration="417000" />
+      <workItem from="1642521511502" duration="9027000" />
+      <workItem from="1642534266996" duration="4354000" />
     </task>
     <servers />
   </component>
