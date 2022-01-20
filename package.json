@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "start": "turbo run start --parallel",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "test": "echo \"Les Go!\"",
@@ -29,6 +30,11 @@
         ]
       },
       "test": {
+        "dependsOn": [
+          "build"
+        ]
+      },
+      "start": {
         "dependsOn": [
           "build"
         ]
