@@ -1,1 +1,1 @@
-web: cd apps/api && yarn start
+web: yarn start
