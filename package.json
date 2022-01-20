@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "start": "turbo run start --parallel",
+    "start": "turbo run start",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "test": "echo \"Les Go!\"",
