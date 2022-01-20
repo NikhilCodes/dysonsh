@@ -35,6 +35,7 @@
         ]
       },
       "start": {
+        "cache": false,
         "dependsOn": [
           "build"
         ]
