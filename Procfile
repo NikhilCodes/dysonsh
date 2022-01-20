@@ -1,1 +1,1 @@
-web: cd apps/api && npm i && npm start
+web: cd apps/api && npm i && node -r source-map-support/register .
