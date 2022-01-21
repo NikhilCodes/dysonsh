@@ -35,10 +35,6 @@
         ]
       },
       "start": {
-        "cache": false,
-        "dependsOn": [
-          "build"
-        ]
       },
       "lint": {
         "outputs": []
