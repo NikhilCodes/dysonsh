@@ -1,8 +1,14 @@
 version: "3"
 services:
+  studio:
+    build: .
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+      - "3002:3002"
+
   api:
     build: apps/api
-#    image: nikhilcodes/dysonsh-api
     ports:
       - "80:8080"
 
