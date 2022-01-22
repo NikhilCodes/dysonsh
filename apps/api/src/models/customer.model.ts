@@ -23,6 +23,12 @@ export class Customer extends Entity {
   email: string;
 
   @property({
+    type: 'string',
+    required: false,
+  })
+  phoneNumber: string;
+
+  @property({
     type: 'date',
   })
   lastLoginAt?: string;
