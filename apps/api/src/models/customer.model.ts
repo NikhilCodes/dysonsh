@@ -14,7 +14,13 @@ export class Customer extends Entity {
     type: 'string',
     required: true,
   })
-  name: string;
+  username: string;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  email: string;
 
   @property({
     type: 'date',
