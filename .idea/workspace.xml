@@ -72,7 +72,7 @@
       <recent name="$PROJECT_DIR$/apps/studio/pages/api/auth" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.Docker Image">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
       <deployment type="docker-image">
         <settings>
@@ -176,7 +176,7 @@
       <workItem from="1643007007983" duration="149000" />
       <workItem from="1643043980434" duration="3048000" />
       <workItem from="1643047080882" duration="632000" />
-      <workItem from="1643047780772" duration="4130000" />
+      <workItem from="1643047780772" duration="6246000" />
     </task>
     <servers />
   </component>
