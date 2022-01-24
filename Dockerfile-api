@@ -1,0 +1,31 @@
+#FROM node:16.13.2-slim
+#
+#RUN yarn global add @nestjs/cli
+#WORKDIR /app
+#COPY apps/api /app
+#RUN yarn install \
+#    && yarn prebuild \
+#    && yarn build
+#
+#EXPOSE 8080
+##CMD ["node", "dist/main"]
+
+FROM node:16.13.2-slim AS setup
+# Set working directory
+WORKDIR /app
+RUN yarn global add turbo
+COPY . .
+RUN turbo prune --docker --scope="api"
+
+# Add lockfile and package.json's of isolated subworkspace
+FROM node:16.13.2-slim AS builder
+WORKDIR /app
+COPY --from=setup /app/out/full/ .
+RUN yarn install
+RUN yarn turbo run build test --include-dependencies --no-deps
+
+FROM node:16.13.2-slim AS runner
+WORKDIR /app
+COPY --from=builder /app/ .
+EXPOSE 8080
+CMD [ "yarn", "start" ]

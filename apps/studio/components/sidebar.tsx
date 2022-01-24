@@ -14,7 +14,7 @@ export default function Sidebar() {
           <li
             className="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
             <div
-               className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+              className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
               <svg xmlns="http://www.w3.org/2000/svg"
                    className="icon icon-tabler icon-tabler-grid" width="18"
                    height="18" viewBox="0 0 24 24" strokeWidth="1.5"
@@ -35,7 +35,7 @@ export default function Sidebar() {
           <li
             className="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
             <div
-               className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+              className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
               <svg xmlns="http://www.w3.org/2000/svg"
                    className="icon icon-tabler icon-tabler-puzzle" width="18"
                    height="18" viewBox="0 0 24 24" strokeWidth="1.5"
@@ -54,7 +54,7 @@ export default function Sidebar() {
           <li
             className="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
             <div
-               className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+              className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
               <svg xmlns="http://www.w3.org/2000/svg"
                    className="icon icon-tabler icon-tabler-compass" width="18"
                    height="18" viewBox="0 0 24 24" strokeWidth="1.5"
@@ -70,7 +70,7 @@ export default function Sidebar() {
           <li
             className="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
             <div
-               className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+              className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
               <svg xmlns="http://www.w3.org/2000/svg"
                    className="icon icon-tabler icon-tabler-code" width="20"
                    height="20" viewBox="0 0 24 24" strokeWidth="1.5"
@@ -87,7 +87,7 @@ export default function Sidebar() {
           <li
             className="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
             <div
-               className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+              className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
               <svg xmlns="http://www.w3.org/2000/svg"
                    className="icon icon-tabler icon-tabler-puzzle" width="18"
                    height="18" viewBox="0 0 24 24" strokeWidth="1.5"
@@ -106,7 +106,7 @@ export default function Sidebar() {
           <li
             className="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
             <div
-               className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+              className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
               <svg xmlns="http://www.w3.org/2000/svg"
                    className="icon icon-tabler icon-tabler-stack" width="18"
                    height="18" viewBox="0 0 24 24" strokeWidth="1.5"
@@ -123,7 +123,7 @@ export default function Sidebar() {
           <li
             className="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center">
             <div
-               className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+              className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
               <svg xmlns="http://www.w3.org/2000/svg"
                    className="icon icon-tabler icon-tabler-settings" width="18"
                    height="18" viewBox="0 0 24 24" strokeWidth="1.5"
@@ -178,12 +178,17 @@ export default function Sidebar() {
             </button>
           </li>
           <li className="cursor-pointer text-white pt-5 pb-3">
-            <button aria-label="open logs"
-                    className="focus:outline-none focus:ring-2 rounded focus:ring-gray-300">
-              <img
-                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_icons_at_bottom-svg6.svg"
-                alt="drawer" />
-            </button>
+            <a
+              href={'/api/auth/logout'}
+              aria-label="open logs"
+              className="focus:outline-none focus:ring-2 rounded focus:ring-gray-300">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -215,7 +220,7 @@ export default function Sidebar() {
           <li
             className="flex w-full justify-between text-gray-300 hover:text-gray-500 cursor-pointer items-center mb-6">
             <div
-               className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+              className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
               <svg xmlns="http://www.w3.org/2000/svg"
                    className="icon icon-tabler icon-tabler-grid" width="18"
                    height="18" viewBox="0 0 24 24" strokeWidth="1.5"
@@ -236,7 +241,7 @@ export default function Sidebar() {
           <li
             className="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
             <div
-               className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+              className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
               <svg xmlns="http://www.w3.org/2000/svg"
                    className="icon icon-tabler icon-tabler-puzzle" width="18"
                    height="18" viewBox="0 0 24 24" strokeWidth="1.5"
@@ -255,7 +260,7 @@ export default function Sidebar() {
           <li
             className="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
             <div
-               className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+              className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
               <svg xmlns="http://www.w3.org/2000/svg"
                    className="icon icon-tabler icon-tabler-compass" width="18"
                    height="18" viewBox="0 0 24 24" strokeWidth="1.5"
@@ -271,7 +276,7 @@ export default function Sidebar() {
           <li
             className="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
             <div
-               className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+              className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
               <svg xmlns="http://www.w3.org/2000/svg"
                    className="icon icon-tabler icon-tabler-code" width="20"
                    height="20" viewBox="0 0 24 24" strokeWidth="1.5"
@@ -288,7 +293,7 @@ export default function Sidebar() {
           <li
             className="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
             <div
-               className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+              className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
               <svg xmlns="http://www.w3.org/2000/svg"
                    className="icon icon-tabler icon-tabler-puzzle" width="18"
                    height="18" viewBox="0 0 24 24" strokeWidth="1.5"
@@ -307,7 +312,7 @@ export default function Sidebar() {
           <li
             className="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
             <div
-               className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+              className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
               <svg xmlns="http://www.w3.org/2000/svg"
                    className="icon icon-tabler icon-tabler-stack" width="18"
                    height="18" viewBox="0 0 24 24" strokeWidth="1.5"
@@ -324,7 +329,7 @@ export default function Sidebar() {
           <li
             className="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center">
             <div
-               className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+              className="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
               <svg xmlns="http://www.w3.org/2000/svg"
                    className="icon icon-tabler icon-tabler-settings" width="18"
                    height="18" viewBox="0 0 24 24" strokeWidth="1.5"
@@ -353,40 +358,40 @@ export default function Sidebar() {
         </div>
       </div>
       <div className="px-8 border-t border-gray-700">
-        <ul className="w-full flex items-center justify-between bg-gray-800">
-          <li className="cursor-pointer text-white pt-5 pb-3">
-            <button aria-label="show notifications"
-                    className="focus:outline-none focus:ring-2 rounded focus:ring-gray-300">
-              <img
-                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_icons_at_bottom-svg3.svg"
-                alt="notifications" />
-            </button>
-          </li>
-          <li className="cursor-pointer text-white pt-5 pb-3">
-            <button aria-label="open chats"
-                    className="focus:outline-none focus:ring-2 rounded focus:ring-gray-300">
-              <img
-                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_icons_at_bottom-svg4.svg"
-                alt="chat" />
-            </button>
-          </li>
-          <li className="cursor-pointer text-white pt-5 pb-3">
-            <button aria-label="open settings"
-                    className="focus:outline-none focus:ring-2 rounded focus:ring-gray-300">
-              <img
-                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_icons_at_bottom-svg5.svg"
-                alt="settings" />
-            </button>
-          </li>
-          <li className="cursor-pointer text-white pt-5 pb-3">
-            <button aria-label="open logs"
-                    className="focus:outline-none focus:ring-2 rounded focus:ring-gray-300">
-              <img
-                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_icons_at_bottom-svg6.svg"
-                alt="drawer" />
-            </button>
-          </li>
-        </ul>
+        {/*<ul className="w-full flex items-center justify-between bg-gray-800">*/}
+        {/*  <li className="cursor-pointer text-white pt-5 pb-3">*/}
+        {/*    <button aria-label="show notifications"*/}
+        {/*            className="focus:outline-none focus:ring-2 rounded focus:ring-gray-300">*/}
+        {/*      <img*/}
+        {/*        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_icons_at_bottom-svg3.svg"*/}
+        {/*        alt="notifications" />*/}
+        {/*    </button>*/}
+        {/*  </li>*/}
+        {/*  <li className="cursor-pointer text-white pt-5 pb-3">*/}
+        {/*    <button aria-label="open chats"*/}
+        {/*            className="focus:outline-none focus:ring-2 rounded focus:ring-gray-300">*/}
+        {/*      <img*/}
+        {/*        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_icons_at_bottom-svg4.svg"*/}
+        {/*        alt="chat" />*/}
+        {/*    </button>*/}
+        {/*  </li>*/}
+        {/*  <li className="cursor-pointer text-white pt-5 pb-3">*/}
+        {/*    <button aria-label="open settings"*/}
+        {/*            className="focus:outline-none focus:ring-2 rounded focus:ring-gray-300">*/}
+        {/*      <img*/}
+        {/*        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_icons_at_bottom-svg5.svg"*/}
+        {/*        alt="settings" />*/}
+        {/*    </button>*/}
+        {/*  </li>*/}
+        {/*  <li className="cursor-pointer text-white pt-5 pb-3">*/}
+        {/*    <button aria-label="open logs"*/}
+        {/*            className="focus:outline-none focus:ring-2 rounded focus:ring-gray-300">*/}
+        {/*      <img*/}
+        {/*        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/light_with_icons_at_bottom-svg6.svg"*/}
+        {/*        alt="drawer" />*/}
+        {/*    </button>*/}
+        {/*  </li>*/}
+        {/*</ul>*/}
       </div>
     </div>
   </div>

@@ -1,4 +1,4 @@
-version: "3"
+version: "3.9"
 services:
 #  studio:
 #    build: .
@@ -9,7 +9,9 @@ services:
 # Until we have budget for more RAM
 
   api:
-    build: apps/api
+    build:
+      context: .
+      dockerfile: Dockerfile-api
     ports:
       - "80:8080"
 

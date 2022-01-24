@@ -1,0 +1,27 @@
+type Project {
+  id: ID!
+  name: String!
+  region: String!
+  pricing: Int!
+  customer: Customer
+}
+
+input CreateProjectInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateProjectInput {
+  id: Int!
+}
+
+type Query {
+  projects: [Project]!
+  project(id: ID!): Project
+}
+
+type Mutation {
+  createProject(createProjectInput: CreateProjectInput!): Project!
+  updateProject(updateProjectInput: UpdateProjectInput!): Project!
+  removeProject(id: Int!): Project
+}

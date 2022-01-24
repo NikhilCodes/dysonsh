@@ -1,7 +1,10 @@
 import Link from "next/link";
 import { Button } from "ui";
+import { useUser } from '@auth0/nextjs-auth0'
 
 export default function Web() {
+  const {user} = useUser()
+  console.log(user)
   return (
     <div className={'container mx-auto p-32'}>
       <Link
