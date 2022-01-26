@@ -1,11 +1,17 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
+import morgan from 'morgan';
+
+const prefix = '/v1'
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  app.setGlobalPrefix('/v1');
+  app.setGlobalPrefix(prefix);
+  app.use(morgan('tiny'))
+
   await app.listen(8080).then(async () => {
-    console.log(`⚡ Server ready at ${await app.getUrl()}/api/v1`)
+    console.log(`⚡ Server ready at ${await app.getUrl()}${prefix}`)
   });
 }
+
 bootstrap();

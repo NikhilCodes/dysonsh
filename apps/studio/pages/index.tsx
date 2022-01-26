@@ -1,10 +1,7 @@
-import Link from "next/link";
-import { Button } from "ui";
-import { useUser } from '@auth0/nextjs-auth0'
+import Link from 'next/link';
+import { Button } from 'ui';
 
 export default function Web() {
-  const {user} = useUser()
-  console.log(user)
   return (
     <div className={'container mx-auto p-32'}>
       <Link
@@ -25,7 +22,9 @@ export default function Web() {
             </svg>
           </div>
           <div>{'Let\'s Build Something Cool!'}</div>
-          <div className={'text-gray-500 text-sm mt-1'}>Start a project by clicking here</div>
+          <div className={'text-gray-500 text-sm mt-1'}>Start a project by
+            clicking here
+          </div>
         </div>
       </Link>
     </div>

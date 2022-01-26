@@ -1,15 +1,12 @@
 type Customer {
   id: ID!
-  username: String!
   email: String!
-  phoneNumber: String
   createdAt: String
 }
 
 input CreateCustomerInput {
-  username: String!
   email: String!
-  phoneNumber: String
+  passkey: String!
 }
 
 input UpdateCustomerInput {

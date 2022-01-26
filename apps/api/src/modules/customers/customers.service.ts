@@ -15,12 +15,25 @@ export class CustomersService {
     })
   }
 
+  async createIfNotExists(createCustomerInput: CreateCustomerInput) {
+    let exists = await this.customerModel.findOne({ email: createCustomerInput.email })
+    if (!exists) {
+      return this.create(createCustomerInput);
+    } else {
+      return exists;
+    }
+  }
+
   findAll() {
     return this.customerModel.find({})
   }
 
-  findOne(id: string) {
+  findById(id: string) {
     return this.customerModel.findById(id)
+  }
+
+  findOne(filter) {
+    return this.customerModel.findOne(filter)
   }
 
   update(id: string, updateCustomerInput: UpdateCustomerInput) {

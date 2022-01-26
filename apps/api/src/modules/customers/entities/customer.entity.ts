@@ -1,21 +1,27 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'
 import { Document } from 'mongoose';
 
+export type AuthProviderTypes = 'github' | 'google' | 'email-password';
+
 @Schema()
 export class Customer {
   @Prop({ required: true })
-  username: string;
-
-  @Prop({ required: true })
   email: string;
 
-  @Prop()
-  phoneNumber: string;
+  @Prop({
+    default: 'email-password'
+  })
+  authProvider: AuthProviderTypes
+
+  @Prop({
+    required: true,
+  })
+  passkey: string;
 
   @Prop({
     default: Date.now,
   })
-  createdAt: Date
+  createdAt: Date;
 
   [key: string]: any;
 }

@@ -1,5 +1,7 @@
-import { Controller, Get, HttpCode } from '@nestjs/common';
+import { Controller, Get, HttpCode, UseGuards } from '@nestjs/common';
+import { JwtAuthGuard, Public } from '../../guards/jwt-auth.guard'
 
+@Public()
 @Controller('health')
 export class HealthController {
   @Get()

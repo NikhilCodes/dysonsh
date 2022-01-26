@@ -3,17 +3,15 @@ import { CustomersService } from './customers.service';
 import { CreateCustomerInput } from './dto/create-customer.input';
 import { UpdateCustomerInput } from './dto/update-customer.input';
 import { UseGuards } from '@nestjs/common'
-import { WebhookGuard } from '../../guards/webhook.guard'
 
 @Resolver('Customer')
 export class CustomersResolver {
   constructor(private readonly customersService: CustomersService) {}
 
-  @UseGuards(WebhookGuard)
-  @Mutation('createCustomer')
-  create(@Args('createCustomerInput') createCustomerInput: CreateCustomerInput) {
-    return this.customersService.create(createCustomerInput);
-  }
+  // @Mutation('createCustomer')
+  // create(@Args('createCustomerInput') createCustomerInput: CreateCustomerInput) {
+  //   return this.customersService.create(createCustomerInput);
+  // }
 
   @Query('customers')
   findAll() {
@@ -22,7 +20,7 @@ export class CustomersResolver {
 
   @Query('customer')
   findOne(@Args('id') id: string) {
-    return this.customersService.findOne(id);
+    return this.customersService.findById(id);
   }
 
   @Mutation('updateCustomer')
