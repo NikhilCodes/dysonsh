@@ -9,9 +9,7 @@ services:
 # Until we have budget for more RAM
 
   api:
-    build:
-      context: .
-      dockerfile: Dockerfile-api
+    image: nikhilcodes/dysonsh-api:latest
     ports:
       - "80:8080"
 

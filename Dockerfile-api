@@ -10,7 +10,7 @@ FROM node:16.13.2-slim AS builder
 WORKDIR /app
 COPY --from=setup /app/out/full/ .
 RUN yarn install
-#RUN yarn turbo run build --include-dependencies --no-deps
+RUN yarn turbo run build --include-dependencies --no-deps
 
 FROM node:16.13.2-slim AS runner
 WORKDIR /app
