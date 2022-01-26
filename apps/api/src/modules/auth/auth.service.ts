@@ -16,7 +16,7 @@ export class AuthService {
     const validPassword = await bcrypt.compare(user.passkey, exists?.passkey);
 
     if (exists && validPassword) {
-      const payload = { email: user.email, sub: exists.id };
+      const payload = { id: exists.id, sub: exists.email };
       return {
         access_token: this.jwtService.sign(payload),
       };

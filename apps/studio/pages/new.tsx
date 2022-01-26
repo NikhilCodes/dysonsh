@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router'
 
-export default function NewOrganization() {
+export default function NewProject() {
   const regions = [
     'India',
     'East US (North Virginia)',

@@ -25,3 +25,7 @@ body {
   background-color: lightgrey;
   border-radius: 10px;
 }
+
+.app-bg {
+  background: #131a25;
+}

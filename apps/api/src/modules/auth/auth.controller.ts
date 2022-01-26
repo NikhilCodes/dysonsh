@@ -23,6 +23,12 @@ export class AuthController {
     private readonly customersService: CustomersService,
   ) {}
 
+  @Get('status')
+  async status(@Request() req) {
+    let { passkey, ...data } = (await this.customersService.findById(req.user.id))?.toJSON()
+    return data
+  }
+
   @Public()
   @Post('login')
   async login(@Body() body) {
