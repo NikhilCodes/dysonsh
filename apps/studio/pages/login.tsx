@@ -11,11 +11,10 @@ export default function Login() {
   const {refreshUser} = useAuth()
 
   const onClickSignIn = async () => {
-    console.log(email, passkey)
-    console.log(await axios.post('/api/auth/login', {
+    await axios.post('/api/auth/login', {
       email,
       passkey,
-    }))
+    })
 
     refreshUser()
   }
