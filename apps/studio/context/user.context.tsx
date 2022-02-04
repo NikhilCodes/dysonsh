@@ -8,7 +8,7 @@ export const AuthContext = React.createContext({
   refreshUser: () => {},
 })
 
-export const AuthProvider = ({ children, failureRedirectTo }) => {
+export const AuthProvider = ({ children, failureRedirectTo, successRedirectTo }) => {
   const [user, setUser] = useState(null)
 
   const [isLoading, setIsLoading] = useState(true);
@@ -16,9 +16,10 @@ export const AuthProvider = ({ children, failureRedirectTo }) => {
 
   const getUser = () => {
     return axios.get('api/auth/status')
-      .then((resp) => {
+      .then(async (resp) => {
         if (resp.status === 200) {
           setUser(resp.data)
+          await router.replace(successRedirectTo)
         }
 
       }).catch(async () => {
@@ -39,7 +40,7 @@ export const AuthProvider = ({ children, failureRedirectTo }) => {
     getUser().finally(() => {
       setIsLoading(false);
     })
-  }, [failureRedirectTo])
+  }, [failureRedirectTo, successRedirectTo])
 
   return (
     <AuthContext.Provider value={{ user, isLoading, refreshUser }}>

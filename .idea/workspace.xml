@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dbd0fa5-016d-43c0-af55-0e5cd6b36441" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/studio/hooks/useUser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/studio/pages/api/auth/status.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/studio/pages/login.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/guards/jwt-auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/guards/jwt-auth.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/modules/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/auth/auth.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/auth/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/auth/jwt.strategy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/auth/jwt.strategy.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/studio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/studio/components/authScaffold.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/components/authScaffold.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/studio/context/user.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/context/user.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/studio/hooks/useUser.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/studio/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/studio/pages/_middleware.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/studio/pages/api/auth/[...auth0].ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/studio/pages/new.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/pages/new.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/studio/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/styles/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/studio/pages/api/auth/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/pages/api/auth/login.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/studio/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/pages/login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +186,7 @@
       <workItem from="1643137020968" duration="5436000" />
       <workItem from="1643178976585" duration="33708000" />
       <workItem from="1643225501259" duration="7083000" />
+      <workItem from="1644004724239" duration="2144000" />
     </task>
     <servers />
   </component>

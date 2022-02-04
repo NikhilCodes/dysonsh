@@ -11,6 +11,7 @@ export default async function handler(req, res) {
       setCookie(res, 'utk', data.access_token, {httpOnly: true, path: '/'})
       res.end()
     } catch (err) {
+      console.log(err)
       return res.status(401).json(err)
     }
 

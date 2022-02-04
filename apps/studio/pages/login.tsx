@@ -1,9 +1,25 @@
 import Link from 'next/link'
 import { useState } from 'react'
-import { useUser } from '../hooks/useUser'
+import axios from 'axios'
+import { useAuth } from '../hooks/user.hook'
 
 export default function Login() {
+  const [email, setEmail] = useState('')
+  const [passkey, setPasskey] = useState('')
   const [isSigningIn, setIsSigningIn] = useState(true)
+
+  const {refreshUser} = useAuth()
+
+  const onClickSignIn = async () => {
+    console.log(email, passkey)
+    console.log(await axios.post('/api/auth/login', {
+      email,
+      passkey,
+    }))
+
+    refreshUser()
+  }
+
   return <div
     className="container flex flex-col justify-center items-center my-20 self-center">
     <form className="w-5/12 px-20 py-14 bg-gray-100 bg-opacity-5 rounded-2xl"
@@ -22,6 +38,7 @@ export default function Login() {
             Email
           </label>
           <input
+            onChange={(e) => setEmail(e.target['value'])}
             autoComplete={'nope'}
             className="appearance-none block w-full bg-transparent text-gray-300 border border-gray-200 rounded-lg py-3 px-4 leading-tight focus:outline-none focus:border-cyan-300"
             id="grid-last-name" type="text" placeholder="people@email.com" />
@@ -35,6 +52,7 @@ export default function Login() {
             Password
           </label>
           <input
+            onChange={(e) => setPasskey(e.target.value)}
             autoComplete={'nope'}
             className="appearance-none block w-full bg-transparent text-gray-300 border border-gray-200 rounded-lg py-3 px-4 leading-tight focus:outline-none focus:border-cyan-300"
             id="grid-last-name" type="text" placeholder="*********" />
@@ -59,6 +77,7 @@ export default function Login() {
           </Link>
 
           <button
+            onClick={onClickSignIn}
             className="bg-cyan-600 transition-colors active:bg-gray-400 text-gray-100 py-2 px-4 rounded inline-flex items-center">
             <span>{isSigningIn ? 'Hello again' : 'Hello'}</span>
           </button>
