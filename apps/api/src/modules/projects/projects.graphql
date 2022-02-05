@@ -6,13 +6,24 @@ type Project {
   customer: Customer
 }
 
+enum Region {
+  AP_SOUTH_1
+  AP_SOUTH_2
+}
+
+enum Pricing {
+  SERVERLESS
+  DEDICATED
+}
+
 input CreateProjectInput {
-  # Example field (placeholder)
-  exampleField: Int
+  name: String!
+  region: Region!
+  pricing: Pricing!
 }
 
 input UpdateProjectInput {
-  id: Int!
+  id: ID!
 }
 
 type Query {
@@ -23,5 +34,5 @@ type Query {
 type Mutation {
   createProject(createProjectInput: CreateProjectInput!): Project!
   updateProject(updateProjectInput: UpdateProjectInput!): Project!
-  removeProject(id: Int!): Project
+  removeProject(id: ID!): Project
 }

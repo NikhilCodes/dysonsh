@@ -40,7 +40,7 @@ export class ProjectsResolver {
   }
 
   @Mutation('removeProject')
-  remove(@Args('id') id: number) {
+  remove(@Args('id') id: string) {
     return this.projectsService.remove(id);
   }
 

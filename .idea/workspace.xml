@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dbd0fa5-016d-43c0-af55-0e5cd6b36441" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/apps/studio/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/pages/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/dto/update-project.input.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/dto/update-project.input.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.resolver.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/studio/components/authScaffold.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/components/authScaffold.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/studio/components/suspense.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/components/suspense.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/studio/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/pages/_app.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +186,8 @@
       <workItem from="1643137020968" duration="5436000" />
       <workItem from="1643178976585" duration="33708000" />
       <workItem from="1643225501259" duration="7083000" />
-      <workItem from="1644004724239" duration="2270000" />
+      <workItem from="1644004724239" duration="2298000" />
+      <workItem from="1644040331076" duration="1940000" />
     </task>
     <servers />
   </component>

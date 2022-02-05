@@ -2,7 +2,6 @@ import '../styles/global.css'
 import Sidebar from '../components/sidebar'
 import { AuthScaffold } from '../components/authScaffold'
 import { useRouter } from 'next/router'
-import { useAuth } from '../hooks/user.hook'
 import { AuthProvider } from '../context/user.context'
 
 

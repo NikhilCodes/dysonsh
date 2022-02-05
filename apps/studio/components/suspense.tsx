@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Suspense() {
-  return <div className={'w-100 h-full flex items-center justify-center'}>
+  return <div className={'w-100 h-96 flex items-center justify-center'}>
     <div
       className="animate-spin inline-block h-fit align-middle justify-center flex"
       role="status">

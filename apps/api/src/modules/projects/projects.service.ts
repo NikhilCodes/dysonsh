@@ -21,11 +21,11 @@ export class ProjectsService {
     return this.projectModel.findById(id)
   }
 
-  update(id: number, updateProjectInput: UpdateProjectInput) {
+  update(id: string, updateProjectInput: UpdateProjectInput) {
     return `This action updates a #${id} project`;
   }
 
-  remove(id: number) {
+  remove(id: string) {
     return `This action removes a #${id} project`;
   }
 }
