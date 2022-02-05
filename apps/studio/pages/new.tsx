@@ -14,7 +14,7 @@ export default function NewProject() {
 
   return <div
     className="container flex flex-col justify-center items-center my-20 self-center">
-    <form className="w-5/12 px-20 py-14 bg-gray-100 bg-opacity-5 rounded-2xl" onSubmit={(e) => e.preventDefault()}>
+    <form className="w-5/12 px-20 py-14 bg-white rounded-2xl" onSubmit={(e) => e.preventDefault()}>
       {/*Heading*/}
       <div className={'mb-8 text-2xl'}>
         Create a new project

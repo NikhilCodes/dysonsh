@@ -1,4 +1,4 @@
-import * as React from "react";
 import './styles/globals.css'
+import * as React from 'react'
 
-export * from "./Button";
+export * from './Button';

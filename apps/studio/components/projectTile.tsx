@@ -1,22 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { regionParser } from '../lib/helpers'
 
 interface ProjectTileProps {
-  key?: string
   title: string
-  is_running?: boolean;
+  region: string
+  is_running?: boolean
 }
 
 export default function ProjectTile(props: ProjectTileProps) {
   return <div
-    key={props.key}
-    className={'flex flex-col w-96 mb-4 mr-4 p-4 bg-white rounded-lg shadow-md'}>
+    className={'flex flex-col w-96 mb-4 mr-4 p-4 bg-white rounded-lg shadow-md cursor-pointer'}>
     <div className={'font-semibold'}>
       {props.title}
     </div>
-    <div className={'flex mt-4'}>
+    <div className={'flex mt-4'} style={{ fontSize: '0.6rem' }}>
       <div
-        style={{ fontSize: '0.6rem', padding: '2pt 6pt' }}
-        className={`${props.is_running ? 'bg-emerald-500' : 'bg-yellow-500'} rounded-xl flex items-center`}
+        className={`${props.is_running ? 'bg-emerald-500' : 'bg-yellow-500'} cell`}
       >
         {props.is_running
           ? <div className={'w-2 h-2 rounded-full bg-white mr-1.5'} />
@@ -26,6 +25,10 @@ export default function ProjectTile(props: ProjectTileProps) {
           </>}
         <div
           className={'font-extrabold text-white '}>{props.is_running ? 'RUNNING' : 'PAUSED'}</div>
+      </div>
+
+      <div className={'cell bg-gray-200 ml-2'}>
+        {regionParser(props.region)}
       </div>
     </div>
   </div>

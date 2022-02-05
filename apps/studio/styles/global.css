@@ -33,3 +33,8 @@ body {
 .login-hero {
   @apply flex-1 px-20 py-14 bg-gradient-to-br to-cyan-700 from-fuchsia-900
 }
+
+.cell {
+  padding: 2pt 6pt;
+  @apply rounded-xl flex items-center items-center
+}

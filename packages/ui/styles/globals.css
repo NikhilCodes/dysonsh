@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.primary-button {
+  @apply bg-cyan-500 transition-colors text-white bg-indigo-600 rounded-md text-lg font-semibold text-sm py-1 px-4 active:bg-indigo-700
+}

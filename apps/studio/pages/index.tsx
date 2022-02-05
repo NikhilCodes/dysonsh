@@ -1,12 +1,14 @@
 import Link from 'next/link';
-import { Button } from 'ui';
+import { Button, PrimaryButton } from 'ui';
 import { useEffect, useState } from 'react'
 import graphqlClient from '../lib/graphql'
 import { gql } from '@apollo/client'
 import Suspense from '../components/suspense'
 import ProjectTile from '../components/projectTile'
+import { useRouter } from 'next/router'
 
 export default function Dashboard() {
+  const router = useRouter()
   const [projects, setProjects] = useState([])
   const [isLoading, setIsLoading] = useState(true)
 
@@ -35,7 +37,12 @@ export default function Dashboard() {
 
   return (
     <div className={'container mx-auto p-32'}>
-      <h1>Dashboard</h1>
+      <div className={'flex items-center'}>
+        <h1 className={'font-bold text-4xl text-gray-600'}>Dashboard</h1>
+        <div className={'w-5'} />
+        {projects.length && <PrimaryButton onClick={() => router.push('new')}>New</PrimaryButton>}
+      </div>
+      <br />
       {projects.length === 0 && <Link
         href={'/new'}
         passHref
@@ -65,6 +72,7 @@ export default function Dashboard() {
             key={project.id}
             title={project.name}
             is_running={project.is_running}
+            region={project.region}
           />
         })}
       </div>
