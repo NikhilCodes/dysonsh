@@ -79,6 +79,7 @@ export default function Dashboard() {
             title={project.name}
             is_running={project.is_running}
             region={project.region}
+            pricing={project.pricing}
           />
         })}
       </div>
