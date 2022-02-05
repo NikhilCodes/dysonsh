@@ -19,7 +19,10 @@ export const AuthProvider = ({ children, failureRedirectTo, successRedirectTo })
       .then(async (resp) => {
         if (resp.status === 200) {
           setUser(resp.data)
-          await router.replace(successRedirectTo)
+          console.log(router.pathname)
+          if (router.pathname.includes('login')) {
+            await router.replace(successRedirectTo)
+          }
         }
 
       }).catch(async () => {
