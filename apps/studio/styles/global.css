@@ -35,6 +35,6 @@ body {
 }
 
 .cell {
-  padding: 2pt 6pt;
-  @apply rounded-xl flex items-center items-center
+  padding: 2pt 8pt;
+  @apply rounded-full flex items-center items-center
 }
