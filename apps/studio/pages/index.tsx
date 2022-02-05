@@ -76,6 +76,7 @@ export default function Dashboard() {
         {projects.map((project) => {
           return <ProjectTile
             key={project.id}
+            id={project.id}
             title={project.name}
             is_running={project.is_running}
             region={project.region}

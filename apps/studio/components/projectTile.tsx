@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react'
 import { regionParser } from '../lib/helpers'
+import { useRouter } from 'next/router'
 
 interface ProjectTileProps {
+  id?: String
   title: string
   region: string
   is_running?: boolean
@@ -9,9 +11,17 @@ interface ProjectTileProps {
 }
 
 export default function ProjectTile(props: ProjectTileProps) {
+  const router = useRouter()
   const is_dedicated = props.pricing === 'DEDICATED'
+
+  const onClickProject = () => {
+    router.push(`${props.id}`)
+  }
+
   return <div
-    className={'flex flex-col w-96 mb-4 mr-4 p-4 bg-white rounded-lg shadow-md cursor-pointer relative overflow-hidden'}>
+    className={'flex flex-col w-96 mb-4 mr-4 p-4 bg-white rounded-lg shadow-md cursor-pointer relative overflow-hidden'}
+    onClick={onClickProject}
+  >
     {is_dedicated && <PremiumRibbon />}
     <div className={'font-semibold'}>
       {props.title}
