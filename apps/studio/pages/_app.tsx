@@ -11,7 +11,7 @@ export default function MyApp({ Component, pageProps }) {
 
   return <AuthProvider failureRedirectTo={'/login'} successRedirectTo={'/'}>
     <AuthScaffold>
-      <div className={'flex flex-no-wrap text-white min-h-screen'}>
+      <div className={'flex flex-no-wrap text-gray-800 min-h-screen'}>
         {router.pathname !== '/login' && <Sidebar />}
         <div
           className={'max-h-screen w-full overflow-y-scroll flex flex-col justify-start app-bg'}>

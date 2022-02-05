@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dbd0fa5-016d-43c0-af55-0e5cd6b36441" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/studio/assets/quote-svgrepo-com.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/dto/update-project.input.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/dto/update-project.input.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/studio/components/authScaffold.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/components/authScaffold.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/studio/components/suspense.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/components/suspense.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/studio/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/studio/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/pages/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/studio/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/styles/global.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps/web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps/studio/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -64,11 +61,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/studio/assets" />
       <recent name="$PROJECT_DIR$/apps/web" />
       <recent name="$PROJECT_DIR$/packages/environment" />
       <recent name="$PROJECT_DIR$/packages" />
       <recent name="$PROJECT_DIR$/packages/env" />
-      <recent name="$PROJECT_DIR$/apps" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/apps/api/src/modules" />
@@ -187,7 +184,7 @@
       <workItem from="1643178976585" duration="33708000" />
       <workItem from="1643225501259" duration="7083000" />
       <workItem from="1644004724239" duration="2298000" />
-      <workItem from="1644040331076" duration="1940000" />
+      <workItem from="1644040331076" duration="5770000" />
     </task>
     <servers />
   </component>

@@ -27,5 +27,9 @@ body {
 }
 
 .app-bg {
-  background: #131a25;
+  background: aliceblue;
+}
+
+.login-hero {
+  @apply flex-1 px-20 py-14 bg-gradient-to-br to-cyan-700 from-fuchsia-900
 }
