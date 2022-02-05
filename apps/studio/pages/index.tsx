@@ -1,15 +1,47 @@
 import Link from 'next/link';
 import { Button } from 'ui';
+import { useEffect, useState } from 'react'
+import graphqlClient from '../lib/graphql'
+import { gql } from '@apollo/client'
+import Suspense from '../components/suspense'
+import ProjectTile from '../components/projectTile'
 
-export default function Web() {
+export default function Dashboard() {
+  const [projects, setProjects] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    graphqlClient.query({
+      query: gql`query QueryProjects {
+          projects {
+              id
+              name
+              region
+              pricing
+              is_running
+          }
+      }`,
+    })
+    .then(({ data }) => setProjects(data.projects))
+    .finally(() => {
+      setIsLoading(false)
+    })
+  }, [])
+
+
+  if (isLoading) {
+    return <Suspense />
+  }
+
   return (
     <div className={'container mx-auto p-32'}>
-      <Link
+      <h1>Dashboard</h1>
+      {projects.length === 0 && <Link
         href={'/new'}
         passHref
       >
         <div
-          className="rounded border-dashed bg-opacity-10 bg-gray-400 border-2 border-gray-300 text-white text-xl p-20 text-center rounded-2xl cursor-pointer"
+          className="rounded border-dashed bg-opacity-10 bg-gray-400 border-2 border-gray-300 text-xl p-20 text-center rounded-2xl cursor-pointer"
         >
           <div className={'flex justify-center align-middle mb-4'}>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
@@ -26,7 +58,16 @@ export default function Web() {
             clicking here
           </div>
         </div>
-      </Link>
+      </Link>}
+      <div className={'flex flex-wrap'}>
+        {projects.map((project) => {
+          return <ProjectTile
+            key={project.id}
+            title={project.name}
+            is_running={project.is_running}
+          />
+        })}
+      </div>
     </div>
   );
 }

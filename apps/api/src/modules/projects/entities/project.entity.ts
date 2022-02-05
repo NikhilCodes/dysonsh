@@ -14,6 +14,9 @@ export class Project {
   @Prop({ required: true })
   pricing: string;
 
+  @Prop({default: true})
+  is_running: boolean;
+
   @Prop({
     required: true,
     type: [

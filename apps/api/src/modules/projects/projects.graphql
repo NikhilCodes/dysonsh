@@ -2,7 +2,8 @@ type Project {
   id: ID!
   name: String!
   region: String!
-  pricing: Int!
+  pricing: String!
+  is_running: Boolean
   customer: Customer
 }
 
