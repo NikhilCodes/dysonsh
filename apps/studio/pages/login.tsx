@@ -4,6 +4,11 @@ import axios from 'axios'
 import { useAuth } from '../hooks/user.hook'
 import Image  from 'next/image'
 import QuoteSvg from '../assets/quote-svgrepo-com.svg'
+import Egg1 from '../assets/egg.svg'
+import Egg2 from '../assets/egg1.svg'
+import Egg3 from '../assets/egg2.svg'
+import Egg4 from '../assets/egg3.svg'
+import Egg5 from '../assets/egg4.svg'
 
 export default function Login() {
   const [email, setEmail] = useState('')
@@ -22,9 +27,15 @@ export default function Login() {
   }
 
   return <div
-    className="flex justify-center items-center self-center h-screen">
+    className="flex justify-center items-center self-center h-screen w-full relative">
+    <div className={'absolute z-0 top-20 left-0 flex  opacity-50'}>
+      <Image src={Egg1} alt={'egg1'} />
+      <Image src={Egg2} alt={'egg2'} />
+      <Image src={Egg3} alt={'egg3'} />
+      <Image src={Egg4} alt={'egg4'} />
+    </div>
     <div
-      className={'flex bg-white shadow-lg rounded-2xl overflow-hidden'}
+      className={'flex bg-white shadow-lg rounded-2xl overflow-hidden z-20'}
     >
       <div className="px-20 py-14 flex flex-1 min-w-fit">
         <form

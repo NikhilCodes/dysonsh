@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dbd0fa5-016d-43c0-af55-0e5cd6b36441" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/studio/assets/quote-svgrepo-com.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/studio/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/studio/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/pages/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/studio/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/styles/global.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +181,9 @@
       <workItem from="1643178976585" duration="33708000" />
       <workItem from="1643225501259" duration="7083000" />
       <workItem from="1644004724239" duration="2298000" />
-      <workItem from="1644040331076" duration="5770000" />
+      <workItem from="1644040331076" duration="6385000" />
+      <workItem from="1644049533990" duration="258000" />
+      <workItem from="1644049812000" duration="137000" />
     </task>
     <servers />
   </component>
