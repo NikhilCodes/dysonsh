@@ -32,6 +32,10 @@ export class UsersService {
     return this.userModel.findById(id)
   }
 
+  findByIdMultiple(listOfId: string[]) {
+    return this.userModel.find({ id: { $in: listOfId } })
+  }
+
   findOne(filter) {
     return this.userModel.findOne(filter)
   }

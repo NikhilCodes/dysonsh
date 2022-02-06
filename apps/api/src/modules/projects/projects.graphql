@@ -4,12 +4,13 @@ type Project {
   region: String!
   pricing: String!
   is_running: Boolean
-  user: User
+  users: [User]
+  write_replica: Replica
+  read_replicas: [Replica]
 }
 
 enum Region {
   AP_SOUTH_1
-  AP_SOUTH_2
 }
 
 enum Pricing {

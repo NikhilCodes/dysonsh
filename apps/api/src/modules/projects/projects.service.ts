@@ -13,16 +13,18 @@ export class ProjectsService {
     return 'This action adds a new project';
   }
 
-  findAll() {
-    return this.projectModel.find({})
+  findAllByUserId(uid: string) {
+    return this.projectModel.find({
+      users: { $in: uid },
+    })
   }
 
   findOne(id: string) {
     return this.projectModel.findById(id)
   }
 
-  update(id: string, updateProjectInput: UpdateProjectInput) {
-    return `This action updates a #${id} project`;
+  update(id: string, updateProjectInput: UpdateProjectInput | any) {
+    return this.projectModel.updateOne({ _id: id }, updateProjectInput)
   }
 
   remove(id: string) {

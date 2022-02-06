@@ -4,6 +4,7 @@ import { UsersModule } from './modules/users/users.module';
 import { GraphQLModule } from '@nestjs/graphql';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ProjectsModule } from './modules/projects/projects.module';
+import { ReplicasModule } from './modules/replicas/replicas.module';
 import { HealthController } from './modules/health/health.controller';
 import { ConfigModule } from '@nestjs/config'
 import { AuthModule } from './modules/auth/auth.module';
@@ -27,6 +28,7 @@ import { JwtAuthGuard } from './guards/jwt-auth.guard'
     }),
     UsersModule,
     ProjectsModule,
+    ReplicasModule,
     AuthModule,
   ],
   controllers: [HealthController],

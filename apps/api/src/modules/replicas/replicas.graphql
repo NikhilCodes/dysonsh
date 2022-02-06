@@ -1,0 +1,26 @@
+type Replica {
+  id: ID
+  type: String!
+  connection_uri: String!
+}
+
+input CreateReplicaInput {
+  connection_uri: String!
+  project: ID
+}
+
+input UpdateReplicaInput {
+  id: ID!
+}
+
+type Query {
+  replica(id: ID!): Replica
+}
+
+type Mutation {
+  createReplica(createReplicaInput: CreateReplicaInput): Replica!
+  createWriteReplica(createReplicaInput: CreateReplicaInput): Replica!
+  createReadReplica(createReplicaInput: CreateReplicaInput): Replica!
+  updateReplica(updateReplicaInput: UpdateReplicaInput!): Replica!
+  removeReplica(id: ID!): Replica
+}

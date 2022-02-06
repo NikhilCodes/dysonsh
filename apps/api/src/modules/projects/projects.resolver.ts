@@ -11,12 +11,15 @@ import { UpdateProjectInput } from './dto/update-project.input';
 import { User } from '../users/entities/user.entity'
 import { Project } from './entities/project.entity'
 import { UsersService } from '../users/users.service'
+import { ReplicasService } from '../replicas/replicas.service'
+import { CurrentUser } from '../../decorators/current-user.decorator'
 
 @Resolver('Project')
 export class ProjectsResolver {
   constructor(
     private readonly projectsService: ProjectsService,
     private readonly usersService: UsersService,
+    private readonly replicasService: ReplicasService,
   ) {}
 
   @Mutation('createProject')
@@ -25,8 +28,8 @@ export class ProjectsResolver {
   }
 
   @Query('projects')
-  findAll() {
-    return this.projectsService.findAll();
+  findAll(@CurrentUser() user) {
+    return this.projectsService.findAllByUserId(user.id);
   }
 
   @Query('project')
@@ -45,8 +48,20 @@ export class ProjectsResolver {
   }
 
   @ResolveField()
-  async user(@Parent() project: Project) {
-    const { user } = project;
-    return this.usersService.findOne(user.toString());
+  async users(@Parent() project: Project) {
+    const { users } = project;
+    return this.usersService.findByIdMultiple(users);
+  }
+
+  @ResolveField()
+  async write_replica(@Parent() project: Project) {
+    const { write_replica } = project;
+    return this.replicasService.findOne(write_replica);
+  }
+
+  @ResolveField()
+  async read_replicas(@Parent() project: Project) {
+    const { read_replicas } = project;
+    return this.replicasService.findByIdMultiple(read_replicas);
   }
 }

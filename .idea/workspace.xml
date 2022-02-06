@@ -2,34 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dbd0fa5-016d-43c0-af55-0e5cd6b36441" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/entities/replica.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/studio/pages/[pid]/datasource.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/src/decorators/current-user.decorator.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/auth/auth.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/auth/auth.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/auth/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/auth/jwt.strategy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/auth/jwt.strategy.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/customers/customers.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/customers/customers.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/customers/customers.resolver.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/customers/customers.resolver.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/customers/customers.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/customers/customers.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/customers/dto/create-customer.input.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/customers/dto/update-customer.input.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/customers/entities/customer.entity.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/guards/jwt-auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/guards/jwt-auth.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/dto/update-project.input.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/dto/update-project.input.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/entities/project.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/entities/project.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/entities/replica.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/replicas/entities/replica.entity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.graphql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.resolver.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.resolver.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/studio/components/projectTile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/components/projectTile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/studio/context/user.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/context/user.context.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/studio/lib/graphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/lib/graphql.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/studio/pages/[pid].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/pages/[pid]/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/studio/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/styles/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/users/users.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,11 +75,11 @@
       <recent name="$PROJECT_DIR$/packages/env" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/api/src/modules/replicas/entities" />
       <recent name="$PROJECT_DIR$/apps/studio/pages/[pid]" />
       <recent name="$PROJECT_DIR$/apps/api/src/modules" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/apps/api/src/guards" />
-      <recent name="$PROJECT_DIR$/apps/api/src/middleware" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -212,7 +196,8 @@
       <workItem from="1644049812000" duration="3753000" />
       <workItem from="1644055103701" duration="22372000" />
       <workItem from="1644131577788" duration="12000" />
-      <workItem from="1644145679224" duration="10537000" />
+      <workItem from="1644145679224" duration="11931000" />
+      <workItem from="1644168564568" duration="5611000" />
     </task>
     <servers />
   </component>
