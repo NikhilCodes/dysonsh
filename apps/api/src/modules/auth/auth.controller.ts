@@ -3,16 +3,10 @@ import {
   Get,
   Post,
   Body,
-  Patch,
-  Param,
-  Delete,
-  UseGuards,
   Request,
-  Response,
 } from '@nestjs/common';
-import { AuthService } from './auth.service';
-import passport from 'passport'
-import { CustomersService } from '../customers/customers.service'
+import { AuthService } from './auth.service'
+import { UsersService } from '../users/users.service'
 import { Public } from '../../guards/jwt-auth.guard'
 
 
@@ -20,12 +14,12 @@ import { Public } from '../../guards/jwt-auth.guard'
 export class AuthController {
   constructor(
     private readonly authService: AuthService,
-    private readonly customersService: CustomersService,
+    private readonly usersService: UsersService,
   ) {}
 
   @Get('status')
   async status(@Request() req) {
-    let { passkey, ...data } = (await this.customersService.findById(req.user.id))?.toJSON()
+    let { passkey, ...data } = (await this.usersService.findById(req.user.id))?.toJSON()
     return data
   }
 

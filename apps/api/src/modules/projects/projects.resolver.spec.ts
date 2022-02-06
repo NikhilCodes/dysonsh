@@ -1,10 +1,10 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { ProjectsResolver } from './projects.resolver';
 import { ProjectsService } from './projects.service';
-import { CustomersService } from '../customers/customers.service'
+import { UsersService } from '../users/users.service'
 import { MongooseModule } from '@nestjs/mongoose'
 import { Project, ProjectSchema } from './entities/project.entity'
-import { Customer, CustomerSchema } from '../customers/entities/customer.entity'
+import { User, UserSchema } from '../users/entities/user.entity'
 import { GraphQLModule } from '@nestjs/graphql'
 
 describe('ProjectsResolver', () => {
@@ -29,12 +29,12 @@ describe('ProjectsResolver', () => {
             schema: ProjectSchema,
           },
           {
-            name: Customer.name,
-            schema: CustomerSchema,
+            name: User.name,
+            schema: UserSchema,
           },
         ]),
       ],
-      providers: [ProjectsResolver, ProjectsService, CustomersService]
+      providers: [ProjectsResolver, ProjectsService, UsersService]
     }).compile();
 
     resolver = module.get<ProjectsResolver>(ProjectsResolver);

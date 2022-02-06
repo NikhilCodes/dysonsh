@@ -3,8 +3,8 @@ import { ProjectsService } from './projects.service';
 import { ProjectsResolver } from './projects.resolver';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Project, ProjectSchema } from './entities/project.entity';
-import { Customer, CustomerSchema } from '../customers/entities/customer.entity'
-import { CustomersService } from '../customers/customers.service'
+import { User, UserSchema } from '../users/entities/user.entity'
+import { UsersService } from '../users/users.service'
 
 @Module({
   imports: [
@@ -14,11 +14,11 @@ import { CustomersService } from '../customers/customers.service'
         schema: ProjectSchema,
       },
       {
-        name: Customer.name,
-        schema: CustomerSchema,
+        name: User.name,
+        schema: UserSchema,
       },
     ]),
   ],
-  providers: [ProjectsResolver, ProjectsService, CustomersService]
+  providers: [ProjectsResolver, ProjectsService, UsersService]
 })
 export class ProjectsModule {}

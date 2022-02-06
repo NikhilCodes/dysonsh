@@ -15,11 +15,7 @@ export default function ProjectTile(props: ProjectTileProps) {
   const router = useRouter()
   const is_dedicated = props.pricing === 'DEDICATED'
 
-  const onClickProject = () => {
-    router.push(`${props.id}`)
-  }
-
-  return <Link href={'/[slug]'} as={`/${props.id}`}>
+  return <Link passHref href={'/[slug]'} as={`/${props.id}`}>
     <div
       className={'flex flex-col w-96 mb-4 mr-4 p-4 bg-white rounded-lg shadow-md cursor-pointer relative overflow-hidden'}
     >

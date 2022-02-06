@@ -1,7 +1,8 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'
-import { Customer } from '../../customers/entities/customer.entity'
+import { User } from '../../users/entities/user.entity'
 import * as mongoose from 'mongoose';
 import { Document } from 'mongoose'
+import { Replica } from './replica.entity'
 
 @Schema()
 export class Project {
@@ -22,11 +23,32 @@ export class Project {
     type: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Customer',
+        ref: 'User',
       },
     ],
   })
-  customer: Customer | mongoose.Schema.Types.ObjectId | string;
+  user: User | mongoose.Schema.Types.ObjectId | string;
+
+  @Prop({
+    type: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Replica',
+      },
+    ],
+  })
+  masterReplica: Replica | mongoose.Schema.Types.ObjectId | string
+
+  @Prop({
+    default: [],
+    type: [
+      {
+        type: [mongoose.Schema.Types.ObjectId],
+        ref: 'Replica',
+      },
+    ],
+  })
+  readReplicas: Replica[] | mongoose.Schema.Types.ObjectId[] | string[]
 }
 
 export type ProjectDocument = Project & Document;

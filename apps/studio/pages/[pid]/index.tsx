@@ -1,14 +1,15 @@
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import { gql } from '@apollo/client'
-import graphqlClient from '../lib/graphql'
-import Suspense from '../components/suspense'
+import graphqlClient from '../../lib/graphql'
+import Suspense from '../../components/suspense'
 import Image from 'next/image'
-import GraphIcon from '../assets/graph-icon.svg'
-import DbIcon from '../assets/db-icon.svg'
-import SettingsIcon from '../assets/setting-icon.svg'
-import { ProjectType } from '../lib/types'
-import { regionParser } from '../lib/helpers'
+import GraphIcon from '../../assets/graph-icon.svg'
+import DbIcon from '../../assets/db-icon.svg'
+import SettingsIcon from '../../assets/setting-icon.svg'
+import { ProjectType } from '../../lib/types'
+import { regionParser } from '../../lib/helpers'
+import Link from 'next/link'
 
 export default function ProjectOverview() {
   const router = useRouter()
@@ -71,17 +72,23 @@ export default function ProjectOverview() {
       <ActionCards
         className={'from-emerald-500 to-emerald-700 shadow-emerald-300'}
         icon={DbIcon}
-        name={'Database'}
+        name={'Datastore'}
+        href={'[slug]/datasource'}
+        as={`${pid}/datasource`}
       />
       <ActionCards
         className={'from-fuchsia-700 to-fuchsia-900 shadow-fuchsia-300'}
         icon={GraphIcon}
         name={'Graph'}
+        href={'[slug]/graph'}
+        as={`${pid}/graph`}
       />
       <ActionCards
         className={'from-cyan-500 to-cyan-700 shadow-cyan-300'}
         icon={SettingsIcon}
         name={'Configuration'}
+        href={'[slug]/configuration'}
+        as={`${pid}/configuration`}
       />
     </div>
   </div>
@@ -89,14 +96,16 @@ export default function ProjectOverview() {
 
 
 function ActionCards(props) {
-  return <div
-    {...props}
-    className={`m-7 p-10 flex-1 h-56 rounded-3xl shadow-2xl bg-gradient-to-br cursor-pointer ${props.className}`}
-  >
-    <div className={'bg-white w-20 h-20 p-5 rounded-2xl'}>
-      <Image height={'200px'} width={'200px'} src={props.icon} alt={'icon'} />
+  return <Link passHref href={props.href} as={props.as}>
+    <div
+      {...props}
+      className={`m-7 p-10 flex-1 h-56 rounded-3xl shadow-2xl bg-gradient-to-br cursor-pointer ${props.className}`}
+    >
+      <div className={'bg-white w-20 h-20 p-5 rounded-2xl'}>
+        <Image height={'200px'} width={'200px'} src={props.icon} alt={'icon'} />
+      </div>
+      <br />
+      <div className={'text-white text-2xl font-bold'}>{props.name}</div>
     </div>
-    <br />
-    <div className={'text-white text-2xl font-bold'}>{props.name}</div>
-  </div>
+  </Link>
 }

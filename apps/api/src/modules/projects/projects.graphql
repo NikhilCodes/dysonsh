@@ -4,7 +4,7 @@ type Project {
   region: String!
   pricing: String!
   is_running: Boolean
-  customer: Customer
+  user: User
 }
 
 enum Region {

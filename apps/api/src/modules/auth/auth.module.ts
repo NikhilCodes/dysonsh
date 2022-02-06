@@ -1,10 +1,10 @@
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
-import { CustomersService } from '../customers/customers.service'
+import { UsersService } from '../users/users.service'
 import { MongooseModule } from '@nestjs/mongoose'
-import { Customer, CustomerSchema } from '../customers/entities/customer.entity'
-import { CustomersModule } from '../customers/customers.module'
+import { User, UserSchema } from '../users/entities/user.entity'
+import { UsersModule } from '../users/users.module'
 import { PassportModule } from '@nestjs/passport'
 import { JwtModule } from '@nestjs/jwt'
 import { authEnv } from 'config/env.dev.js'
@@ -13,7 +13,7 @@ import { JwtStrategy } from './jwt.strategy'
 
 @Module({
   imports: [
-    CustomersModule,
+    UsersModule,
     PassportModule,
     JwtModule.register({
       secret: authEnv.JWT_SECRET,

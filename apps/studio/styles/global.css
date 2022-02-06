@@ -38,3 +38,8 @@ body {
   padding: 2pt 8pt;
   @apply rounded-full flex items-center items-center
 }
+
+.tile {
+  @apply transition-all bg-white rounded-2xl w-1/4 m-3 p-10 shadow-lg flex flex-col justify-center items-center cursor-pointer
+  active:shadow-md active:translate-y-1
+}

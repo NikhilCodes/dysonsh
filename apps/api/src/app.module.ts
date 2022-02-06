@@ -1,6 +1,6 @@
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { AppService } from './app.service';
-import { CustomersModule } from './modules/customers/customers.module';
+import { UsersModule } from './modules/users/users.module';
 import { GraphQLModule } from '@nestjs/graphql';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ProjectsModule } from './modules/projects/projects.module';
@@ -25,7 +25,7 @@ import { JwtAuthGuard } from './guards/jwt-auth.guard'
         context: ({ req }) => ({ req }),
       }),
     }),
-    CustomersModule,
+    UsersModule,
     ProjectsModule,
     AuthModule,
   ],

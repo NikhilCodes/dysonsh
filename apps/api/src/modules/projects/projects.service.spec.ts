@@ -3,7 +3,7 @@ import { ProjectsService } from './projects.service';
 import { MongooseModule } from '@nestjs/mongoose'
 import { GraphQLModule } from '@nestjs/graphql'
 import { Project, ProjectSchema } from './entities/project.entity'
-import { Customer, CustomerSchema } from '../customers/entities/customer.entity'
+import { User, UserSchema } from '../users/entities/user.entity'
 
 describe('ProjectsService', () => {
   let service: ProjectsService;
@@ -25,8 +25,8 @@ describe('ProjectsService', () => {
             schema: ProjectSchema,
           },
           {
-            name: Customer.name,
-            schema: CustomerSchema,
+            name: User.name,
+            schema: UserSchema,
           },
         ]),
       ],

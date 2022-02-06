@@ -8,15 +8,15 @@ import {
 import { ProjectsService } from './projects.service';
 import { CreateProjectInput } from './dto/create-project.input';
 import { UpdateProjectInput } from './dto/update-project.input';
-import { Customer } from '../customers/entities/customer.entity'
+import { User } from '../users/entities/user.entity'
 import { Project } from './entities/project.entity'
-import { CustomersService } from '../customers/customers.service'
+import { UsersService } from '../users/users.service'
 
 @Resolver('Project')
 export class ProjectsResolver {
   constructor(
     private readonly projectsService: ProjectsService,
-    private readonly customersService: CustomersService,
+    private readonly usersService: UsersService,
   ) {}
 
   @Mutation('createProject')
@@ -45,8 +45,8 @@ export class ProjectsResolver {
   }
 
   @ResolveField()
-  async customer(@Parent() project: Project) {
-    const { customer } = project;
-    return this.customersService.findOne(customer.toString());
+  async user(@Parent() project: Project) {
+    const { user } = project;
+    return this.usersService.findOne(user.toString());
   }
 }

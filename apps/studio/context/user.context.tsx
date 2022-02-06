@@ -15,7 +15,7 @@ export const AuthProvider = ({ children, failureRedirectTo, successRedirectTo })
   const router = useRouter()
 
   const getUser = () => {
-    return axios.get('api/auth/status')
+    return axios.get('http://localhost:3000/api/auth/status')
       .then(async (resp) => {
         if (resp.status === 200) {
           setUser(resp.data)
