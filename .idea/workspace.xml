@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5dbd0fa5-016d-43c0-af55-0e5cd6b36441" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/api/src/decorators/current-user.decorator.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/guards/jwt-auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/guards/jwt-auth.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/dto/update-project.input.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/dto/update-project.input.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/entities/project.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/entities/project.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/entities/replica.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/replicas/entities/replica.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/projects/projects.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/modules/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/src/modules/users/users.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/studio/pages/[pid]/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/pages/[pid]/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/studio/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/styles/global.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +52,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps/studio/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -138,7 +134,7 @@
       <scripts>
         <script value="dev" />
       </scripts>
-      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v16.13.2/bin/node" />
+      <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
@@ -198,6 +194,9 @@
       <workItem from="1644131577788" duration="12000" />
       <workItem from="1644145679224" duration="11931000" />
       <workItem from="1644168564568" duration="5611000" />
+      <workItem from="1645271978099" duration="66000" />
+      <workItem from="1645272059645" duration="2971000" />
+      <workItem from="1645276500328" duration="575000" />
     </task>
     <servers />
   </component>

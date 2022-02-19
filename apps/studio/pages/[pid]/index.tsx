@@ -72,7 +72,7 @@ export default function ProjectOverview() {
       <ActionCards
         className={'from-emerald-500 to-emerald-700 shadow-emerald-300'}
         icon={DbIcon}
-        name={'Datastore'}
+        name={'Data'}
         href={'[slug]/datasource'}
         as={`${pid}/datasource`}
       />
@@ -86,7 +86,7 @@ export default function ProjectOverview() {
       <ActionCards
         className={'from-cyan-500 to-cyan-700 shadow-cyan-300'}
         icon={SettingsIcon}
-        name={'Configuration'}
+        name={'Config'}
         href={'[slug]/configuration'}
         as={`${pid}/configuration`}
       />
@@ -99,7 +99,7 @@ function ActionCards(props) {
   return <Link passHref href={props.href} as={props.as}>
     <div
       {...props}
-      className={`m-7 p-10 flex-1 h-56 rounded-3xl shadow-2xl bg-gradient-to-br cursor-pointer ${props.className}`}
+      className={`action-card ${props.className}`}
     >
       <div className={'bg-white w-20 h-20 p-5 rounded-2xl'}>
         <Image height={'200px'} width={'200px'} src={props.icon} alt={'icon'} />

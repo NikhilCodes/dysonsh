@@ -43,3 +43,8 @@ body {
   @apply transition-all bg-white rounded-2xl w-1/4 m-3 p-10 shadow-lg flex flex-col justify-center items-center cursor-pointer
   active:shadow-md active:translate-y-1
 }
+
+.action-card {
+  min-width: 12rem;
+  @apply m-7 p-10 flex-1 h-56 rounded-3xl shadow-2xl bg-gradient-to-br cursor-pointer
+}
