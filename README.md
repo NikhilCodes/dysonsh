@@ -1,4 +1,14 @@
-# Turborepo starter
+# DysonSh
+
+### Screenshots
+
+![ss1](https://github.com/NikhilCodes/dysonsh/blob/dev/Screenshot%202022-04-22%20at%203.07.10%20AM.png)
+![ss2](https://github.com/NikhilCodes/dysonsh/blob/dev/Screenshot%202022-04-22%20at%203.07.31%20AM.png)
+![ss3](https://github.com/NikhilCodes/dysonsh/blob/dev/Screenshot%202022-04-22%20at%203.07.39%20AM.png)
+![ss4](https://github.com/NikhilCodes/dysonsh/blob/dev/Screenshot%202022-04-22%20at%203.07.48%20AM.png)
+
+
+## Turborepo starter
 
 This is an official Yarn v1 starter turborepo.
 
